@@ -1,0 +1,89 @@
+@font-face{
+    font-family: myFontYugi;
+    src: url(font/squealer.ttf);
+}
+
+body{
+    margin: 0;
+    background-color: white;
+    background-image: radial-gradient(#f4f5f5,#c2c2c2);
+    font-family: myFontYugi;
+    
+}
+
+.container{
+    padding: 40px;
+    margin:0 auto;
+    text-align: center;
+}
+
+h1{
+    text-transform: uppercase;
+    font-size: 54px;
+}
+
+#btnRefresh{
+    height: 50px;
+    outline: none;
+    border-radius: 15px;
+    color: white;
+    background-color: #8b5d5d;  
+    transition: 1s background-color,color;
+    border: solid;
+}
+
+#btnRefresh:hover{
+    background-color: white;
+    color:#8b5d5d;
+}
+
+
+#Deck{
+    padding-inline-start:0;
+    display: grid;
+    grid-template-columns:repeat(auto-fit, minmax(320px,1fr));
+    grid-gap: 20px;
+}
+
+.card{
+    list-style: none;
+    text-align: center;
+    padding: 20px;
+}
+
+.card:hover{
+    animation: bounce 0.5s linear;
+}
+
+@keyframes bounce{
+    20% {
+        transform: translateY(-18px);
+    }
+    40%{
+        transform: translateY(0px);
+    }
+    60%{
+        transform: translateY(-12px);
+    }
+    80%{
+        transform: translateY(-0px);
+    }
+}
+
+.card-image{
+    height: 100%;
+    width: 100%;
+}
+
+/*
+.card-title{
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: normal;
+    margin-bottom: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 10px;
+}
+*/
+
+
